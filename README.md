@@ -5,14 +5,14 @@
   
 
   
-  **やることリスト**
+**やることリスト**
   
-  [] spotify api
+-  [] spotify api
   
-  [] instagwam api
+-  [] instagwam api
   
-  [] booklist?
+-  [] booklist?
   
-  [] meow
+-  [] meow
   
   
