@@ -1,7 +1,9 @@
 # erstinn.github.io
 <h3>技術スタック </h3
   
-  - vite, React, Redux, scss
+  - vite, React, mui icons, scss
+
+  - Icons provided by Icons8 (https://icons8.com/) 
   
 
   
@@ -14,5 +16,18 @@
 -  [ ] booklist?
   
 -  [ ] meow
-  
-  
+
+
+**アヒルノート**
+
+- `<ThemeProvider>` (mui) vs `<ThemeContext.Provider>` (react)
+
+  - mui's provides additional functionality such as the ability to dynamically change the theme at runtime using `createTheme()`.
+
+  - _抽象化はしないつもりだったけど、テーマの変更以外にReactライブラリの代わりにMUIを使っちゃった_
+
+**参考など**
+
+- w3schools
+
+- 

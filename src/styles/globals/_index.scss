@@ -1,0 +1,8 @@
+//here you load the partials you have created
+//todo
+// @forward takes all these style rules in the partials and forwards them to get loaded
+// these partials are in different dir, load them in ../style.scss, and it will automatically look for _index.scss in globals dir
+@forward "boilerplate";
+@forward "typography";
+@forward "colors";
+@forward "mixins";

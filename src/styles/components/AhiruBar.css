@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "BIZ UDMincho", serif;
+  background-color: var(--bg);
+  color: hsl(0, 0%, 11%);
+}
+
+h1, h2, h3 {
+  font-weight: 1000;
+  line-height: 1.01;
+  margin-top: 0;
+}
+
+h3 {
+  line-height: 0.3;
+}
+
+h1 {
+  line-height: 0.3;
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+:root {
+  --bg: #C6B7E4;
+  --bg_secondary: #F0E9D6;
+  --bg_header: #A594AA;
+  --text_header: #655C6B;
+}
+
+:root.dark {
+  --bg: #2E333E;
+  --bg_header: #BE9396;
+  --text_header: #EBE098;
+  --text: #C3D9D3;
+  --placeholder: #986B66;
+}
+
+.ahiru-bar {
+  display: flex;
+  justify-content: flex-start;
+  transition: transform 3s;
+}
+.ahiru-bar__img {
+  margin: 0.2rem 0 0 0.1rem;
+  padding: 0;
+  cursor: pointer;
+  max-height: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  float: left;
+  height: 100%;
+  width: 4rem;
+}
+.ahiru-bar__sidebar {
+  z-index: 1;
+  width: 25%;
+  height: 60vh;
+  margin-top: 3.5rem;
+  position: fixed;
+  background-color: var(--bg_secondary);
+  margin-left: -1rem;
+  border: 1px solid var(--bg_secondary);
+  border-radius: 20px;
+}
+.ahiru-bar__sidebar.hidden {
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+}
+.ahiru-bar__sidebar.visible {
+  display: inherit;
+  transition: transform 0.5s;
+  transform: translateX(10%);
+}
+
+/*# sourceMappingURL=AhiruBar.css.map */

@@ -1,0 +1,18 @@
+@use '../globals' ;
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  color: var(--bg_secondary); //todo change to better text color
+
+  h1 {
+    margin: 10rem 5rem 5rem 5rem;
+    font-size: 5rem;
+  }
+  p {
+    margin: 0 1rem 1rem 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}

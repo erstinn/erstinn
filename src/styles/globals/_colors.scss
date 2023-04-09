@@ -1,0 +1,22 @@
+//this file just showcases css custom variables, other than that, useless
+//notion devtools showed me how to light/dark themes
+
+:root{
+  //--background-color: hsl(0, 0%, 11%);
+  //--background-color: hsl(0, 0%, 100%);
+  //--text-color: hsl(0, 0%, 11%); //use/call/load this var w: var(--text-color);
+  //--light--bg: #C6B7E4;
+  --bg: #C6B7E4;
+  --bg_secondary: #F0E9D6; //header color
+  --bg_header: #A594AA; //header text color
+  --text_header: #655C6B; //normal text color or #4F4541
+}
+
+:root.dark{ //based on arc dark theme
+  --bg: #2E333E;
+  //--bg_secondary: #BE9396; //header color
+  --bg_header: #BE9396; //header color
+  --text_header: #EBE098; //header text color
+  --text: #C3D9D3; //normal text color
+  --placeholder: #986B66;
+}

@@ -1,0 +1,86 @@
+@use '../globals' ;
+
+.card-grid {
+  display: grid;
+  align-self: center;
+  grid-gap: 0 0;
+  margin-inline: 5rem 2rem;
+  margin-top: 5rem;
+  border: 0.1px solid var(--bg);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  min-height: 26rem;
+  min-width: 15rem;
+  max-height: 40rem;
+  max-width: 20rem;
+  //max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+
+  &__body{
+    display: grid;
+    max-height: 30rem;
+    max-width: 15rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-self: start;
+    &__img{
+      display: block;
+      justify-self: center;
+      object-fit: cover;
+      width: 20rem;
+      //width: 100%;
+      //height: auto;
+      height: 25rem;
+      //background-size: cover;
+      //background-position: center;
+    }
+
+    &__icons{
+      align-self: center;
+    }
+  }
+
+
+  &__header{
+    display: flex;
+    position: relative;
+    color: var(--text_header);
+    margin: 1rem 0 0.5rem 0;
+    max-height: 1rem;
+    text-transform: lowercase;
+    justify-self: center;
+  }
+
+  h3 {
+    font-weight: 300;
+  }
+
+  &__animateCard-right {
+    animation-duration: 1s;
+    //animation: lefttoright 1s ease-in forwards 3 alternate 5s;
+    //transition: ;
+    animation-name: animate-cards1;
+  }
+  @keyframes animate-cards1 {
+    0% {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(100%);
+      transition: all 1s
+    }
+    100%{
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+  }
+}
+
+//todo put code inside `media` query in case ppl dont like animation
+@media (prefers-reduced-motion) {
+  //sample animation:
+  //.hidden { transition: none' }
+  
+}
