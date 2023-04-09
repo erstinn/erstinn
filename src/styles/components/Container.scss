@@ -7,7 +7,7 @@
   color: var(--bg_secondary); //todo change to better text color
 
   h1 {
-    margin: 10rem 5rem 5rem 5rem;
+    margin: 4rem 5rem 5rem 5rem;
     font-size: 5rem;
   }
   p {
@@ -15,4 +15,33 @@
     font-weight: 700;
     font-size: 2rem;
   }
+}
+
+.small-card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  //grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+
+  //@keyframes stagger {
+  //  from {
+  //    opacity: 0;
+  //    filter: blur(5px);
+  //    transform: translateX(-100%);
+  //    transition: all 1s    }
+  //  to {
+  //    opacity: 1;
+  //    filter: blur(0);
+  //    transform: translateX(0);
+  //  }
+  //}
+
+  //$second: 1000;
+  //@for $i from 1 through 9 {
+  //  &:nth-child(#{$i}) {
+  //    transition-delay: #{$second}ms;
+  //      $second: $second + 200 ;
+  //  }
+  //}
+
 }

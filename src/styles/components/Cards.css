@@ -57,35 +57,24 @@ a, a:visited, a:active {
   align-self: center;
   grid-gap: 0 0;
   margin-inline: 5rem 2rem;
-  margin-top: 5rem;
+  margin-top: 0.1rem;
   border: 0.1px solid var(--bg);
   border-radius: 15px;
   background-color: var(--bg_secondary);
-  min-height: 26rem;
-  min-width: 15rem;
+  min-height: 0.1rem;
+  min-width: 0.1rem;
   max-height: 40rem;
   max-width: 20rem;
   overflow: hidden;
   padding: 0;
 }
 .card-grid__body {
-  display: grid;
-  max-height: 30rem;
-  max-width: 15rem;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  justify-self: start;
+  display: inline-block;
+  position: relative;
 }
 .card-grid__body__img {
-  display: block;
-  justify-self: center;
-  object-fit: cover;
-  width: 20rem;
-  height: 25rem;
-}
-.card-grid__body__icons {
-  align-self: center;
+  max-width: 100%;
+  height: auto;
 }
 .card-grid__header {
   display: flex;
@@ -103,11 +92,28 @@ a, a:visited, a:active {
   animation-duration: 1s;
   animation-name: animate-cards1;
 }
+.card-grid__animateCard-left {
+  animation-duration: 1s;
+  animation-name: animate-cards2;
+}
 @keyframes animate-cards1 {
   0% {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(100%);
+    transition: 1s;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+@keyframes animate-cards2 {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
     transition: all 1s;
   }
   100% {
@@ -115,6 +121,66 @@ a, a:visited, a:active {
     filter: blur(0);
     transform: translateX(0);
   }
+}
+
+.small-card-grid {
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--bg);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  max-width: 8rem;
+  max-height: 10rem;
+  margin: 1rem 0 0 1rem;
+  opacity: 0;
+}
+.small-card-grid.stagger {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: stagger-animation;
+}
+@keyframes stagger-animation {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 1s;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+.small-card-grid h3 {
+  font-weight: 300;
+}
+.small-card-grid:nth-child(1) {
+  animation-delay: 100ms;
+}
+.small-card-grid:nth-child(2) {
+  animation-delay: 250ms;
+}
+.small-card-grid:nth-child(3) {
+  animation-delay: 400ms;
+}
+.small-card-grid:nth-child(4) {
+  animation-delay: 550ms;
+}
+.small-card-grid:nth-child(5) {
+  animation-delay: 700ms;
+}
+.small-card-grid:nth-child(6) {
+  animation-delay: 850ms;
+}
+.small-card-grid:nth-child(7) {
+  animation-delay: 1000ms;
+}
+.small-card-grid:nth-child(8) {
+  animation-delay: 1150ms;
+}
+.small-card-grid:nth-child(9) {
+  animation-delay: 1300ms;
 }
 
 /*# sourceMappingURL=Cards.css.map */

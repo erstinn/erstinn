@@ -1,4 +1,5 @@
-//todo THIS IS NOT USED, ONLY FOR JS PRACTICE AND AVOIDING PURE ABSTRACTION THROUGH REACT
+//todo THIS IS NOT USED, ONLY FOR JS PRACTICE AND AVOIDING PURE ABSTRACTION THROUGH REACT; will apply solely through react
+// no bueno to manipulate DOM (vanilla js script) then manipulate virtualDOM (react's way)
 // this script is simply to study js and dom stuff, overall this should be done in react
 // "intersecting" = is it on the screen
 //as soon as a single pixel shows on the screen, it is `show`n
