@@ -7,17 +7,16 @@ html {
 
 *, *::before *::after{
   box-sizing: inherit; //inherits box-sizing under `html` selector
-
-
 }
 
 //CSS reset:
 //browser has default styles, and they are added into any sites unless overwritten by these styles in `body`
-//todo this isn't needed but kept it anyway (Im using CssBaseline from MUI's lib)
+//todo (or use CssBaseline from MUI's lib)
 body {
-  margin: 0;
+  margin: 1rem;
   padding: 0;
-  font-family: 'BIZ UDMincho', serif; //todo dno if wil change it to MY font
+  font-family: 'DotGothic16', sans-serif;
+  //font-family: 'BIZ UDMincho', serif; //todo dno if wil change it to MY font
   background-color: var(--bg);
-  color: hsl(0, 0%, 11%);
+  color: var(--text);
 }

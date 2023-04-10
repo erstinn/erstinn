@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
   padding: 0;
-  font-family: "BIZ UDMincho", serif;
+  font-family: "DotGothic16", sans-serif;
   background-color: var(--bg);
-  color: hsl(0, 0%, 11%);
+  color: var(--text_header);
 }
 
 h1, h2, h3 {
@@ -26,7 +26,7 @@ h3 {
 }
 
 h1 {
-  line-height: 0.3;
+  font-size: 5rem;
 }
 
 p {
@@ -41,7 +41,7 @@ a, a:visited, a:active {
   --bg: #C6B7E4;
   --bg_secondary: #F0E9D6;
   --bg_header: #A594AA;
-  --text_header: #655C6B;
+  --text_header: rgba(123, 82, 0, 0.76);
 }
 
 :root.dark {
@@ -52,6 +52,15 @@ a, a:visited, a:active {
   --placeholder: #986B66;
 }
 
+@keyframes fade-in-upwards {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes fade-in-outwards {}
 /* The switch - the box around the slider */
 .switch {
   position: relative;

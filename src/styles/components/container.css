@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
   padding: 0;
-  font-family: "BIZ UDMincho", serif;
+  font-family: "DotGothic16", sans-serif;
   background-color: var(--bg);
-  color: hsl(0, 0%, 11%);
+  color: var(--text);
 }
 
 h1, h2, h3 {
@@ -26,11 +26,12 @@ h3 {
 }
 
 h1 {
-  line-height: 0.3;
+  font-size: 5rem;
 }
 
 p {
   margin-top: 0;
+  font-size: 1.5rem;
 }
 
 a, a:visited, a:active {
@@ -38,10 +39,11 @@ a, a:visited, a:active {
 }
 
 :root {
-  --bg: #C6B7E4;
-  --bg_secondary: #F0E9D6;
+  --bg: #F4A7A0;
+  --bg_secondary: #F4E8D2;
   --bg_header: #A594AA;
-  --text_header: #655C6B;
+  --text_header: #4F4541;
+  --text: #F0E9D6;
 }
 
 :root.dark {
@@ -52,26 +54,32 @@ a, a:visited, a:active {
   --placeholder: #986B66;
 }
 
-.container {
+@keyframes fade-in-outwards {}
+.intro-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
   color: var(--bg_secondary);
 }
-.container h1 {
+.intro-container h1 {
   margin: 4rem 5rem 5rem 5rem;
   font-size: 5rem;
 }
-.container p {
+.intro-container p {
   margin: 0 1rem 1rem 2rem;
-  font-weight: 700;
-  font-size: 2rem;
 }
 
 .small-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
   justify-content: center;
 }
 
-/*# sourceMappingURL=Container.css.map */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+  justify-content: center;
+  color: var(--bg_secondary);
+}
+
+/*# sourceMappingURL=container.css.map */

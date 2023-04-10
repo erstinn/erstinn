@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
   padding: 0;
-  font-family: "BIZ UDMincho", serif;
+  font-family: "DotGothic16", sans-serif;
   background-color: var(--bg);
-  color: hsl(0, 0%, 11%);
+  color: var(--text);
 }
 
 h1, h2, h3 {
@@ -26,11 +26,12 @@ h3 {
 }
 
 h1 {
-  line-height: 0.3;
+  font-size: 5rem;
 }
 
 p {
   margin-top: 0;
+  font-size: 1.5rem;
 }
 
 a, a:visited, a:active {
@@ -38,10 +39,11 @@ a, a:visited, a:active {
 }
 
 :root {
-  --bg: #C6B7E4;
-  --bg_secondary: #F0E9D6;
+  --bg: #F4A7A0;
+  --bg_secondary: #F4E8D2;
   --bg_header: #A594AA;
-  --text_header: #655C6B;
+  --text_header: #4F4541;
+  --text: #F0E9D6;
 }
 
 :root.dark {
@@ -52,7 +54,8 @@ a, a:visited, a:active {
   --placeholder: #986B66;
 }
 
-.card-grid {
+@keyframes fade-in-outwards {}
+.intro-grid {
   display: grid;
   align-self: center;
   grid-gap: 0 0;
@@ -66,17 +69,16 @@ a, a:visited, a:active {
   max-height: 40rem;
   max-width: 20rem;
   overflow: hidden;
-  padding: 0;
 }
-.card-grid__body {
+.intro-grid__body {
   display: inline-block;
   position: relative;
 }
-.card-grid__body__img {
+.intro-grid__body__img {
   max-width: 100%;
   height: auto;
 }
-.card-grid__header {
+.intro-grid__header {
   display: flex;
   position: relative;
   color: var(--text_header);
@@ -85,38 +87,22 @@ a, a:visited, a:active {
   text-transform: lowercase;
   justify-self: center;
 }
-.card-grid h3 {
+.intro-grid h3 {
   font-weight: 300;
 }
-.card-grid__animateCard-right {
+.intro-grid__fadein-right {
+  animation-name: fade-in-right;
   animation-duration: 1s;
-  animation-name: animate-cards1;
+  animation-fill-mode: both;
 }
-.card-grid__animateCard-left {
-  animation-duration: 1s;
-  animation-name: animate-cards2;
-}
-@keyframes animate-cards1 {
-  0% {
+@keyframes fade-in-right {
+  from {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(100%);
-    transition: 1s;
+    transition: 0.5s;
   }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-  }
-}
-@keyframes animate-cards2 {
-  0% {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-  }
-  100% {
+  to {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
@@ -131,15 +117,18 @@ a, a:visited, a:active {
   background-color: var(--bg_secondary);
   max-width: 8rem;
   max-height: 10rem;
-  margin: 1rem 0 0 1rem;
+  margin: 3rem 0 0 1rem;
   opacity: 0;
+}
+.small-card-grid__img {
+  padding-inline: 2rem;
 }
 .small-card-grid.stagger {
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-name: stagger-animation;
+  animation-name: stagger;
 }
-@keyframes stagger-animation {
+@keyframes stagger {
   from {
     opacity: 0;
     filter: blur(5px);
@@ -183,4 +172,64 @@ a, a:visited, a:active {
   animation-delay: 1300ms;
 }
 
-/*# sourceMappingURL=Cards.css.map */
+.projects-grid {
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--bg);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  min-height: 0.1rem;
+  min-width: 0.1rem;
+  max-height: 20rem;
+  max-width: 30rem;
+  margin: 3rem 0 0 1rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+.projects-grid__title {
+  justify-self: center;
+  margin-top: 9rem;
+}
+.projects-grid__header {
+  display: flex;
+  position: relative;
+  color: var(--text_header);
+  margin: 1rem 0 0.5rem 0;
+  max-height: 1rem;
+  text-transform: lowercase;
+  justify-self: center;
+}
+.projects-grid__img {
+  max-width: 100%;
+  height: auto;
+}
+.projects-grid__fadein-up {
+  animation-name: fade-in-upwards;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fade-in-upwards {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.projects-grid__fadein-down {
+  animation-name: fade-in-downwards;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fade-in-downwards {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/*# sourceMappingURL=dashboard.css.map */

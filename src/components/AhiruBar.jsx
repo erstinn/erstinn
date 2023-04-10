@@ -15,15 +15,25 @@ const AhiruBar = () => {
         setMenuClicked(!isMenuClicked)
     }
     return (
-        <div className='ahiru-bar' onClick={updateMenu}>
-            {!isMenuClicked ?(
-                <img className='ahiru-bar__img' src="/images/crywatercute.png" alt=""/>
-            ) : (
-                <img className='ahiru-bar__img' src="/images/futoimizuniiruriru.png" alt=""/>
-            )}
-            {/*todo enclose sht inside menu in `Container`*/}
-            <div className={`ahiru-bar__sidebar  ${menu_class}`}></div>
+        <div>
+            {/*todo may remove burger completely*/}
+            <div className='ahiru-bar' >
+                {!isMenuClicked ?(
+                    <img onClick={updateMenu} className='ahiru-bar__img' src="/images/crywatercute.png" alt=""/>
+                ) : (
+                    <img onClick={updateMenu} className='ahiru-bar__img' src="/images/futoimizuniiruriru.png" alt=""/>
+                )}
+                {/*todo enclose sht inside menu in `Container`*/}
+                <div className={`ahiru-bar__sidebar  ${menu_class}`}></div>
+                {/*//placeholder, change image when ive drawn, should have */}
+                <div className='ahiru-bar__lightdark'>
+                    <img className='ahiru-bar__lightdark' src="/images/hanahiru.png" alt=""/> Light Mode
+                    <img className='ahiru-bar__lightdark' src="/images/hanahiru.png" alt=""/> English
+                </div>
+            </div>
+
         </div>
+
     );
 };
 

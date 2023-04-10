@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
   padding: 0;
-  font-family: "BIZ UDMincho", serif;
+  font-family: "DotGothic16", sans-serif;
   background-color: var(--bg);
-  color: hsl(0, 0%, 11%);
+  color: var(--text);
 }
 
 h1, h2, h3 {
@@ -26,11 +26,12 @@ h3 {
 }
 
 h1 {
-  line-height: 0.3;
+  font-size: 5rem;
 }
 
 p {
   margin-top: 0;
+  font-size: 1.5rem;
 }
 
 a, a:visited, a:active {
@@ -38,10 +39,11 @@ a, a:visited, a:active {
 }
 
 :root {
-  --bg: #C6B7E4;
-  --bg_secondary: #F0E9D6;
+  --bg: #F4A7A0;
+  --bg_secondary: #F4E8D2;
   --bg_header: #A594AA;
-  --text_header: #655C6B;
+  --text_header: #4F4541;
+  --text: #F0E9D6;
 }
 
 :root.dark {
@@ -52,9 +54,11 @@ a, a:visited, a:active {
   --placeholder: #986B66;
 }
 
+@keyframes fade-in-outwards {}
 .ahiru-bar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   transition: transform 3s;
 }
 .ahiru-bar__img {
@@ -63,17 +67,24 @@ a, a:visited, a:active {
   cursor: pointer;
   max-height: 50px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  float: left;
   height: 100%;
   width: 4rem;
+}
+.ahiru-bar__lightdark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-height: 50px;
+  height: 100%;
+  margin: 0.2rem 1rem 0 1rem;
+  padding: 0;
+  cursor: pointer;
 }
 .ahiru-bar__sidebar {
   z-index: 1;
   width: 25%;
   height: 60vh;
-  margin-top: 3.5rem;
+  margin-top: 40rem;
   position: fixed;
   background-color: var(--bg_secondary);
   margin-left: -1rem;
@@ -81,10 +92,11 @@ a, a:visited, a:active {
   border-radius: 20px;
 }
 .ahiru-bar__sidebar.hidden {
-  transition: transform 0.5s;
+  transition: transform 1s;
   transform: translateX(-100%);
 }
 .ahiru-bar__sidebar.visible {
+  opacity: 1;
   display: inherit;
   transition: transform 0.5s;
   transform: translateX(10%);

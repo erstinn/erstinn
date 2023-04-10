@@ -1,0 +1,122 @@
+@use '../globals' ;
+@use "../globals/_mixins.scss" as m;
+
+.intro-grid {
+  display: grid;
+  align-self: center;
+  grid-gap: 0 0;
+  margin-inline: 5rem 2rem;
+  margin-top: 0.1rem;
+  border: 0.1px solid var(--bg);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  min-height: 0.1rem;
+  min-width: 0.1rem;
+  max-height: 40rem;
+  max-width: 20rem;
+  overflow: hidden;
+
+
+
+  &__body{
+    display: inline-block;
+    position: relative;
+    &__img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__header{
+    @include m.tab-header;
+  }
+
+  h3 {
+    font-weight: 300;
+  }
+
+  //animations
+  &__fadein-right { //hello this is confusing vs stagger animation but i dont care :)
+    @include m.fade-in-right;
+  }
+
+}
+
+.small-card-grid{
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--bg);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  max-width: 8rem;
+  max-height: 10rem;
+  margin: 3rem 0 0 1rem;
+  opacity: 0;
+
+  &__img {
+    padding-inline: 2rem;
+  }
+
+  &.stagger { //animation
+    @include m.stagger;
+  }
+
+  h3 {
+    font-weight: 300;
+  }
+
+  $second: 100;
+  @for $i from 1 through 9 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$second}ms;
+        $second: $second + 150 ;
+    }
+  }
+}
+
+.projects-grid {
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--bg);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  min-height: 0.1rem;
+  min-width: 0.1rem;
+  max-height: 20rem;
+  max-width: 30rem;
+  margin: 3rem 0 0 1rem;
+  overflow: hidden;
+  object-fit: cover;
+
+
+  &__title {
+    justify-self: center;
+    margin-top: 9rem;
+  }
+
+  &__header {
+    @include m.tab-header;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  &__fadein-up {
+    @include m.fade-in-upwards;
+  }
+  &__fadein-down {
+    @include m.fade-in-downwards;
+  }
+}
+
+
+
+//todo put code inside `media` query in case ppl dont like animation
+@media (prefers-reduced-motion) {
+  //sample animation:
+  //.hidden { transition: none' }
+  
+}
