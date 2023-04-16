@@ -5,7 +5,7 @@ import '../styles/components/container.scss';
 
 
 const Intro = () => {
-    //IntersectionObserver stuff; to look the long version, go ../scwipts/sample-vanilla
+    //IntersectionObserver stuff; to look the long version, go ../renshuuscwipts/sample-vanilla
     //todo GO LOOK OR GET EATEN BY ABSTRACTION
     const {ref: ahiRef, inView: elemIsVisible} = useInView({threshold: 1, triggerOnce: true,} );
     const { ref: picRef, inView: introPicIsVisible } = useInView(); //test for first card

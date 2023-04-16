@@ -11,7 +11,6 @@ body {
   margin: 1rem;
   padding: 0;
   font-family: "DotGothic16", sans-serif;
-  background-color: var(--bg);
   color: var(--text);
 }
 
@@ -23,10 +22,13 @@ h1, h2, h3 {
 
 h3 {
   line-height: 0.3;
+  font-weight: 300;
 }
 
 h1 {
   font-size: 5rem;
+  margin-top: 10rem;
+  justify-self: center;
 }
 
 p {
@@ -46,8 +48,9 @@ a, a:visited, a:active {
   --text: #F0E9D6;
 }
 
-:root.dark {
+.dark {
   --bg: #2E333E;
+  --bg_secondary: #BE9396;
   --bg_header: #BE9396;
   --text_header: #EBE098;
   --text: #C3D9D3;

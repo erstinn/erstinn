@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
-  color: var(--bg_secondary); //todo change to better text color
 
   h1 {
     margin: 4rem 5rem 5rem 5rem;
@@ -12,8 +11,6 @@
   }
   p {
     margin: 0 1rem 1rem 2rem;
-  //  font-weight: 700;
-  //  font-size: 2rem;
   }
 }
 
@@ -29,5 +26,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
   justify-content: center;
-  color: var(--bg_secondary);
 }

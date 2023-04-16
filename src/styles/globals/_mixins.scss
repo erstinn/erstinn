@@ -4,15 +4,19 @@
 @mixin fade-in-upwards() {
   @keyframes fade-in-upwards { //`h1` stuff
     from {
+      opacity: 0;
+      filter: blur(5px);
       transform: translateY(100%);
     }
     to {
       transform: translateY(0%);
+      opacity: 1;
+
     }
   }
   animation-name: fade-in-upwards;
   animation-duration: 1s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
 }
 
 @mixin fade-in-downwards() {
@@ -24,11 +28,12 @@
     }
     to {
       transform: translateY(0%);
+      opacity: 1;
     }
   }
   animation-name: fade-in-downwards;
   animation-duration: 1s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
 }
 
 @mixin fade-in-right() {

@@ -9,8 +9,8 @@ const Projects = () => {
     return (
         <div>
             <div className='projects-container'>
-                <div ref={ahiRef} className={`projects-grid__title ${elemIsVisible ? "projects-grid__fadein-down" : ''}`}>
-                    <h1 className='projects-grid__title'>Projects</h1>
+                <div ref={ahiRef} className='projects-container'>
+                    <h1 className={`projects-grid__title ${elemIsVisible ? "projects-grid__fadein-down" : ''}`}>Projects</h1>
                 </div>
             </div>
             <div className='projects-container'>

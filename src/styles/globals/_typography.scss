@@ -5,10 +5,12 @@ h1, h2, h3 { //compound selectors: selectors separated by comma
 }
 h3{
   line-height: 0.3;
+  font-weight: 300;
 }
 h1{
   font-size: 5rem;
-  //line-height: 0.3;
+  margin-top: 10rem;
+  justify-self: center;
 }
 
 p {
