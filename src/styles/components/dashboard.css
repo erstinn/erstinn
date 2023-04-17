@@ -49,7 +49,7 @@ a, a:visited, a:active {
 }
 
 .dark {
-  --bg: #2E333E;
+  --bg: #2F343F;
   --bg_secondary: #BE9396;
   --bg_header: #BE9396;
   --text_header: #EBE098;
@@ -199,6 +199,7 @@ body {
   justify-self: center;
 }
 .projects-grid__img {
+  aspect-ratio: 5/7;
   max-width: 100%;
   height: auto;
 }

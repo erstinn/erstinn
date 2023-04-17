@@ -1,0 +1,20 @@
+{
+  "en":{
+    "greetingHeader": "Hello",
+    "greetingBody": "I am Erin, a passionate programmer.\n I use Arch Linux for my development setup (btw). I like tinkering and I am obsessed with designing. („• ֊ •„) ",
+    "lightMode" : "Light Mode",
+    "darkMode" : "Dark Mode",
+    "language" : "English",
+    "projects" : "Projects",
+    "hobbies" : "Hobbies"
+  },
+  "jp":{
+    "greetingHeader": "こんにちは、",
+    "greetingBody": "エリンといいます、プログラミングが大好きな人！機器の設定などをいじるのが好きなので、開発の際にはArch Linuxを使っています。いろんなことを知りたいし、デザインをするのも好きです。",
+    "lightMode" : "ライトモード",
+    "darkMode" : "ダークモード",
+    "language" : "日本語",
+    "projects" : "プロジェクト",
+    "hobbies" : "趣味など"
+  }
+}

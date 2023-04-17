@@ -29,13 +29,13 @@ const Projects = () => {
                 <div ref={ahiRef} className={`projects-grid ${elemIsVisible ? "projects-grid__fadein-up" : ''}`}>
                     <div className='projects-grid__header'><h3>ducklang</h3></div>
                         <a href="https://github.com/dnahng/DuckLang" target="_blank">
-                            <img className='projects-grid__img' src="/images/projs/filedger.png" alt=""/>
+                            <img className='projects-grid__img' src="/images/projs/ducklang.png" alt=""/>
                         </a>
                 </div>
                 <div ref={ahiRef} className={`projects-grid ${elemIsVisible ? "projects-grid__fadein-up" : ''}`}>
-                    <div className='projects-grid__header'><h3>ducklang</h3></div>
+                    <div className='projects-grid__header'><h3>duckmovies</h3></div>
                         <a href="https://github.com/erstinn/duckmovies" target="_blank">
-                            <img className='projects-grid__img' src="/images/projs/filedger.png" alt=""/>
+                            <img className='projects-grid__img' src="/images/projs/duckmovies.png" alt=""/>
                         </a>
                 </div>
             </div>

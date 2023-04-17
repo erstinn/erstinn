@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box; //ensures if you add padding/borders to an element of your site,it will be included in the width/height of the element
-                          //e.g. adding padding to 300px box, final width is still 300 regardless of adding paddings
+  // e.g. adding padding to 300px box, final width is still 300 regardless of adding paddings
   font-size: 100%; // accessibility purpose, ensures fontsize on ur site matches 100 % of default fontsize set  in your browser
   //defaults to 16px
 }
