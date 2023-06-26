@@ -1,14 +1,17 @@
 import React from 'react';
 import {useInView} from "react-intersection-observer";
 
-const Hobbies = () => {
+
+// const currentLanguage = lang[language];
+
+const Hobbies = (lang) => {
     const {ref: ahiRef, inView: elemIsVisible} = useInView({threshold: 0.3, triggerOnce: true,} );
-
+    const currentLanguage = lang.lang;
     return (
-        <div>
-
+        <div className>
             <div ref={ahiRef} className={`hobbies-grid ${elemIsVisible ? "projects-grid__fadein-down" : ''}`}>
-                    <h1>Hobbies</h1>
+                {/*console.log(lang[language].hobbies);*/}
+                <h1>{currentLanguage.hobbies}</h1>
             </div>
             <div className={`hobbies-grid ${elemIsVisible ? "projects-grid__fadein-down" : ''}`}>
                 <img className='hobbies-grid__img' src="/images/hobbies/p1.jpg" alt=""/>

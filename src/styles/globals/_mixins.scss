@@ -1,5 +1,15 @@
 //animations
 
+@mixin grid-defaults {
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--border);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  margin: 3rem 0 0 1rem;
+
+}
+
 //dno if ill use them again hence i put here
 @mixin fade-in-upwards() {
   @keyframes fade-in-upwards { //`h1` stuff

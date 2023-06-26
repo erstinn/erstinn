@@ -46,6 +46,9 @@ a, a:visited, a:active {
   --bg_header: #A594AA;
   --text_header: #4F4541;
   --text: #F0E9D6;
+  --border: #F4A7A0;
+  --progress_ongoing: #ffaa6e;
+  --progress_done: #8db58d;
 }
 
 .dark {
@@ -54,7 +57,7 @@ a, a:visited, a:active {
   --bg_header: #BE9396;
   --text_header: #EBE098;
   --text: #C3D9D3;
-  --placeholder: #986B66;
+  --border: #EBE098;
 }
 
 @keyframes fade-in-outwards {}
@@ -73,7 +76,7 @@ a, a:visited, a:active {
 
 .small-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   justify-content: center;
 }
 

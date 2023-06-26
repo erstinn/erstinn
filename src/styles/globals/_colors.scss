@@ -7,6 +7,9 @@
   --bg_header: #A594AA; //header text color
   --text_header: #4F4541; //normal text color or
   --text: #F0E9D6;
+  --border: #F4A7A0;
+  --progress_ongoing: #ffaa6e;
+  --progress_done: #8db58d;
 }
 
 .dark{ //based on arc dark theme
@@ -15,5 +18,5 @@
   --bg_header: #BE9396; //header color
   --text_header: #EBE098; //header text color
   --text: #C3D9D3; //normal text color
-  --placeholder: #986B66;
+  --border: #EBE098;
 }
