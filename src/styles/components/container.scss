@@ -1,13 +1,20 @@
 @use '../globals' ;
-
+@use "../globals/_media.scss" as s;
 .intro-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
 
+  @include s.mobile-small{
+    grid-template-columns: 1fr;
+
+  }
+  @include s.desktop{
+    grid-template-columns: 2fr 1fr;
+  }
+
   h1 {
-    margin: 4rem 5rem 5rem 5rem;
-    font-size: 5rem;
+    margin: 3rem 0 2rem 2rem;
   }
   p {
     margin: 0 1rem 1rem 2rem;
@@ -16,13 +23,29 @@
 
 .small-card-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); //100px -> 6.25rem
   justify-content: center;
+  align-items: center;
 
+  @include s.mobile-small{
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 0.1fr)); //100px -> 6.25rem
+
+  }
+
+  @include s.desktop{
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr)); //100px -> 6.25rem
+  }
 }
 
 .projects-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
   justify-content: center;
+
+  @include s.mobile-small{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0.1fr)); //100px -> 6.25rem
+
+  }
+
+  @include s.desktop{
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 3fr));
+  }
 }

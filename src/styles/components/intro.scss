@@ -1,0 +1,123 @@
+@use '../globals' ;
+@use "../globals/_mixins.scss" as m;
+@use "../globals/_media.scss" as s;
+//todo
+// If your image is smaller than the screen, it will use the image width.
+// If it is bigger, it uses max-width
+
+
+//most grids= tab things
+body {
+    background-color: var(--bg, inherit);
+    color: var(--text);
+}
+.intro-grid {
+    @include m.grid-defaults;
+
+
+    @include s.mobile-small {
+        margin: 2rem;
+        max-height: 23rem;
+        max-width: 20rem;
+        .intro-grid__body{
+            overflow: hidden; /* Hide any content that overflows the container */
+            &__img {
+                //max-width: 100%;
+                //height: auto;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Scale the image to cover the entire container */
+                object-position: center center; /* Position the center of the image */
+            }
+        }
+
+    }
+    @include s.desktop {
+        margin: 5rem 5rem 0 5rem;
+        min-height: 0.1rem;
+        max-height: 30rem;
+        max-width: 20rem;
+        overflow: hidden;
+        &__body {
+            display: inline-block;
+            position: relative;
+            &__img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__header{
+        @include m.tab-header;
+    }
+
+    //animations
+    &__fadein-right { //hello this is confusing vs stagger animation but i dont care :)
+        @include m.fade-in-right;
+    }
+
+}
+
+.small-card-grid{
+    @include m.grid-defaults;
+    min-height: 0.1rem;
+    min-width: 0.1rem;
+    max-height: 20rem;
+    max-width: 10rem;
+    opacity: 0;
+    overflow: hidden;
+
+    @include s.mobile-small {
+        max-height: 9rem;
+        max-width: 6rem;
+        margin: 0.4rem;
+        padding: 0 0 1rem 0;
+        &__img {
+            margin: 0 auto;
+            width: 60%;
+            height: 100%;
+        }
+    }
+
+    @include s.desktop {
+        max-height: 20rem;
+        max-width: 10rem;
+        margin: 1rem 0 0 0.4rem;
+        &__img {
+            align-self: center;
+            margin-inline: 0.4rem 0;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__body{
+        display: grid;
+        text-align: center;
+    }
+
+    &.stagger { //animation
+        @include m.stagger;
+    }
+
+
+    $second: 100;
+    @for $i from 1 through 9 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$second}ms;
+            $second: $second + 150 ;
+        }
+    }
+}
+
+
+
+
+
+
+//todo put code inside `media` query in case ppl dont like animation
+@media (prefers-reduced-motion) {
+    //sample animation:
+    //.hidden { transition: none' }
+
+}

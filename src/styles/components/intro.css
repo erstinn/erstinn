@@ -1,0 +1,230 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 1rem;
+  padding: 0;
+  font-family: "DotGothic16", sans-serif;
+  color: var(--text);
+}
+
+h2, h3 {
+  font-weight: 1000;
+  line-height: 1.01;
+  margin-top: 0;
+}
+
+h3 {
+  line-height: 0.3;
+  font-weight: 300;
+  font-size: calc(10px + 0.5vw);
+}
+
+h1 {
+  font-size: calc(9px + 7vw);
+  margin-top: 10rem;
+  justify-self: center;
+}
+
+p {
+  margin-top: 0;
+  font-size: calc(12px + 0.8vw);
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+:root {
+  --bg: #F4A7A0;
+  --bg_secondary: #F4E8D2;
+  --bg_header: #A594AA;
+  --text_header: #4F4541;
+  --text: #F0E9D6;
+  --border: #F4A7A0;
+  --progress_ongoing: #ffaa6e;
+  --progress_done: #8db58d;
+}
+
+.dark {
+  --bg: #2F343F;
+  --bg_secondary: #BE9396;
+  --bg_header: #BE9396;
+  --text_header: #EBE098;
+  --text: #C3D9D3;
+  --border: #EBE098;
+}
+
+body {
+  background-color: var(--bg, inherit);
+  color: var(--text);
+}
+
+.intro-grid {
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--border);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  margin: 3rem 0 0 1rem;
+  overflow: hidden;
+}
+@media (min-width: 400px) {
+  .intro-grid {
+    margin: 2rem;
+    max-height: 23rem;
+    max-width: 20rem;
+  }
+  .intro-grid .intro-grid__body {
+    overflow: hidden; /* Hide any content that overflows the container */
+  }
+  .intro-grid .intro-grid__body__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the image to cover the entire container */
+    object-position: center center; /* Position the center of the image */
+  }
+}
+@media (min-width: 1440px) {
+  .intro-grid {
+    margin: 5rem 5rem 0 5rem;
+    min-height: 0.1rem;
+    max-height: 30rem;
+    max-width: 20rem;
+    overflow: hidden;
+  }
+  .intro-grid__body {
+    display: inline-block;
+    position: relative;
+  }
+  .intro-grid__body__img {
+    width: 100%;
+    height: auto;
+  }
+}
+.intro-grid__header {
+  display: flex;
+  position: relative;
+  color: var(--text_header);
+  margin: 1rem 0 0.5rem 0;
+  max-height: 1rem;
+  text-transform: lowercase;
+  justify-self: center;
+}
+.intro-grid__fadein-right {
+  animation-name: fade-in-right;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+.small-card-grid {
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--border);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  margin: 3rem 0 0 1rem;
+  overflow: hidden;
+  min-height: 0.1rem;
+  min-width: 0.1rem;
+  max-height: 20rem;
+  max-width: 10rem;
+  opacity: 0;
+  overflow: hidden;
+}
+@media (min-width: 400px) {
+  .small-card-grid {
+    max-height: 9rem;
+    max-width: 6rem;
+    margin: 0.4rem;
+    padding: 0 0 1rem 0;
+  }
+  .small-card-grid__img {
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .small-card-grid {
+    max-height: 20rem;
+    max-width: 10rem;
+    margin: 1rem 0 0 0.4rem;
+  }
+  .small-card-grid__img {
+    align-self: center;
+    margin-inline: 0.4rem 0;
+    width: auto;
+    height: auto;
+  }
+}
+.small-card-grid__body {
+  display: grid;
+  text-align: center;
+}
+.small-card-grid.stagger {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: stagger;
+}
+@keyframes stagger {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 1s;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+.small-card-grid:nth-child(1) {
+  animation-delay: 100ms;
+}
+.small-card-grid:nth-child(2) {
+  animation-delay: 250ms;
+}
+.small-card-grid:nth-child(3) {
+  animation-delay: 400ms;
+}
+.small-card-grid:nth-child(4) {
+  animation-delay: 550ms;
+}
+.small-card-grid:nth-child(5) {
+  animation-delay: 700ms;
+}
+.small-card-grid:nth-child(6) {
+  animation-delay: 850ms;
+}
+.small-card-grid:nth-child(7) {
+  animation-delay: 1000ms;
+}
+.small-card-grid:nth-child(8) {
+  animation-delay: 1150ms;
+}
+.small-card-grid:nth-child(9) {
+  animation-delay: 1300ms;
+}
+
+/*# sourceMappingURL=intro.css.map */

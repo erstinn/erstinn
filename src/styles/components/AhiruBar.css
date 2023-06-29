@@ -14,7 +14,7 @@ body {
   color: var(--text);
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-weight: 1000;
   line-height: 1.01;
   margin-top: 0;
@@ -23,17 +23,18 @@ h1, h2, h3 {
 h3 {
   line-height: 0.3;
   font-weight: 300;
+  font-size: calc(10px + 0.5vw);
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: calc(9px + 7vw);
   margin-top: 10rem;
   justify-self: center;
 }
 
 p {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: calc(12px + 0.8vw);
 }
 
 a, a:visited, a:active {
@@ -60,7 +61,6 @@ a, a:visited, a:active {
   --border: #EBE098;
 }
 
-@keyframes fade-in-outwards {}
 .ahiru-bar {
   display: flex;
   justify-content: flex-end;

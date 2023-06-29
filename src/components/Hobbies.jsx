@@ -1,5 +1,7 @@
 import React from 'react';
 import {useInView} from "react-intersection-observer";
+import '../styles/components/hobbies.scss'; //todo is there a way to not have to include .scss?
+
 
 
 // const currentLanguage = lang[language];

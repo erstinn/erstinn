@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useInView} from "react-intersection-observer";
-import '../styles/components/dashboard.scss'; //todo is there a way to not have to include .scss?
 import '../styles/components/container.scss'; //todo is there a way to not have to include .scss?
+import '../styles/components/projects.scss'; //todo is there a way to not have to include .scss?
 import lang from '../translations.json'
 
 
@@ -30,7 +30,7 @@ const Projects = (lang) => {
                         <h3>FiLedger <span className='projects-grid__done'>[done]</span></h3>
                     </div>
                     <div className='projects-grid__body'>
-                        {currentLanguage.techStack}: NodeJS, ExpressJS, Hyperledger Fabric, Kubernetes, Docker, CouchDB, HTML/CSS
+                        <strong>{currentLanguage.techStack}:</strong> NodeJS, ExpressJS, Hyperledger Fabric, Kubernetes, Docker, CouchDB, HTML/CSS
                     </div>
                     <a href="https://drive.google.com/drive/u/2/folders/10qci5valF2Z_ZGiyiUq1hNH9uZkj154R" target="_blank">
                         <img className='projects-grid__img' src="/images/projs/filedger.png" alt=""/>
@@ -41,7 +41,7 @@ const Projects = (lang) => {
                         <h3>ahiruquiz <span className='projects-grid__ongoing'> [in progress]</span></h3>
                     </div>
                     <div className='projects-grid__body'>
-                        {currentLanguage.techStack}: MERN, Redux, HTML/CSS
+                        <strong>{currentLanguage.techStack}:</strong> MERN, Redux, HTML/CSS
                     </div>
                     <a href="https://ahiruquiz.vercel.app/" target="_blank">
                         <img className='projects-grid__img' src="/images/projs/ahiruquiz.png" alt=""/>
@@ -52,7 +52,7 @@ const Projects = (lang) => {
                         <h3>ducklang <span className='projects-grid__done'>[done]</span></h3>
                     </div>
                     <div className='projects-grid__body'>
-                        {currentLanguage.techStack}: NodeJS
+                        <strong>{currentLanguage.techStack}:</strong> NodeJS
                     </div>
                     <a href="https://github.com/dnahng/DuckLang" target="_blank">
                         <img className='projects-grid__img' src="/images/projs/ducklang.png" alt=""/>
@@ -61,6 +61,9 @@ const Projects = (lang) => {
                 <div ref={ahiRef} className={`projects-grid ${elemIsVisible ? "projects-grid__fadein-up" : ''}`}>
                     <div className='projects-grid__header'>
                         <h3>duckmovies <span className='projects-grid__done'>[done]</span></h3>
+                    </div>
+                    <div className='projects-grid__body'>
+                        <strong>{currentLanguage.techStack}:</strong> HTML, CSS, PHP
                     </div>
                     <a href="https://github.com/erstinn/duckmovies" target="_blank">
                         <img className='projects-grid__img' src="/images/projs/duckmovies.png" alt=""/>

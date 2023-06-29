@@ -1,0 +1,101 @@
+@use '../globals' ;
+@use "../globals/_mixins.scss" as m;
+@use "../globals/_media.scss" as s;
+
+.hobbies-grid {
+    display: grid;
+    place-items: center;
+    opacity: 0;
+
+    &:hover {
+        .hobbies-grid__img:nth-child(1) {
+            transform: translate(-150%, -20%) rotate(-9deg);
+        }
+        .hobbies-grid__img:nth-child(2) {
+            transform: translate(-130%, 30%)rotate(-30deg);
+        }
+        .hobbies-grid__img:nth-child(3) {
+            transform: translate(-90%, -30%)  rotate(-20deg);
+        }
+        .hobbies-grid__img:nth-child(4) {
+            transform: translateX(-60%) rotate(-5deg);
+        }
+        .hobbies-grid__img:nth-child(5) {
+            transform: translate(-30%, -120%)  rotate(-3deg);
+        }
+        .hobbies-grid__img:nth-child(6) {
+            transform: translate(30%, 3%) rotate(1deg);
+        }
+        .hobbies-grid__img:nth-child(7) {
+            transform: translate(60%, 3%) rotate(3deg);
+        }
+        .hobbies-grid__img:nth-child(8) {
+            transform: translate(90%, 100%) rotate(5deg);
+        }
+        .hobbies-grid__img:nth-child(9) {
+            transform: translate(120%, -150%) rotate(7deg);
+        }
+        .hobbies-grid__img:nth-child(10) {
+            transform: translate(150%, 3%) rotate(9deg);
+        }
+    }
+
+
+    &__img {
+        position: absolute;
+        border-radius: 15px;
+        max-width: 20rem;
+        margin-top: 50rem;
+        background-color: var(--bg_secondary);
+        overflow: hidden;
+        transition: transform 1s ease;
+        border: 0.1px solid var(--border);
+
+        &:nth-child(1) {
+            transform: translateX(-90%);
+        }
+        &:nth-child(2) {
+            transform: translateX(-60%);
+        }
+        &:nth-child(3) {
+            transform: translateX(-30%);
+        }
+
+        &:nth-child(8) {
+            transform: translate(30%, 3%);
+        }
+        &:nth-child(9) {
+            transform: translate(60%, 4%);
+        }
+        &:nth-child(10) {
+            transform: translate(90%, 5%);
+        }
+    }
+
+
+
+    @include s.mobile-small {
+        &__img {
+            aspect-ratio: 4 / 3;
+            max-width: 8rem;
+            margin-top: 18rem;
+
+        }
+    }
+    @include s.desktop {
+        &__img {
+            aspect-ratio: 5 / 7;
+            max-width: 20rem;
+            margin-top: 50rem;
+        }
+    }
+    &__fadein-up {
+        @include m.fade-in-upwards;
+    }
+
+    &__fadein-down {
+        @include m.fade-in-downwards;
+    }
+
+
+}

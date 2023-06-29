@@ -1,21 +1,26 @@
-h1, h2, h3 { //compound selectors: selectors separated by comma
+h2, h3 { //compound selectors: selectors separated by comma
   font-weight: 1000; //bold
   line-height: 1.01; //ensures line height of each line of text is a little taller than the usual fontsize itself //1.1 = 110%
   margin-top: 0; //browsers by default add margin top and bottom; can either remove on, depending on ur pref.
+
 }
+
+
 h3{
   line-height: 0.3;
   font-weight: 300;
+  font-size: calc(10px + 0.5vw);
+
 }
 h1{
-  font-size: 5rem;
+  font-size: calc(9px + 7vw);
   margin-top: 10rem;
   justify-self: center;
 }
 
 p {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: calc(12px + 0.8vw);
 }
 
 a, a:visited, a:active {

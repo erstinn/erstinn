@@ -49,7 +49,7 @@ function App() {
                 <img onClick={changeTheme}
                      className='ahiru-bar__contents' src="/images/hanahiru.png" alt=""/>
                     {theme==='light' ?(<span>{currentLanguage.lightMode}</span>) :
-                        (<span> Dark Mode </span>)}
+                        (<span> {currentLanguage.darkMode} </span>)}
             </div>
             <div className='ahiru-bar__contents'>
                 <img  className='ahiru-bar__contents' src="/images/hanahiru.png" alt=""/>

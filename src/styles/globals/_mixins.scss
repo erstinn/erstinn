@@ -7,7 +7,7 @@
   border-radius: 15px;
   background-color: var(--bg_secondary);
   margin: 3rem 0 0 1rem;
-
+  overflow: hidden;
 }
 
 //dno if ill use them again hence i put here
@@ -85,29 +85,6 @@
   animation-name: stagger;
 }
 
-@keyframes fade-in-outwards {
-
-}
-
-//@mixin fade-in-outwards-r() {
-//  @keyframes fade-in-outwards-r {
-//    from {
-//      opacity: 0;
-//      filter: blur(5px);
-//      transform: translateX(50%);
-//      transition: 0.5s;
-//    }
-//    to {
-//      opacity: 1;
-//      filter: blur(0);
-//      transform: translateX(0);
-//    }
-//  }
-//  animation-name: fade-in-outwards-r;
-//  animation-duration: 1s;
-//  animation-fill-mode: both;
-//}
-
 
 //designs
 @mixin tab-header{
@@ -119,3 +96,4 @@
   text-transform: lowercase;
   justify-self: center;
 }
+
