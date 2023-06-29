@@ -10,6 +10,8 @@
   overflow: hidden;
 }
 
+
+//todo ====================================== animations ======================================
 //dno if ill use them again hence i put here
 @mixin fade-in-upwards() {
   @keyframes fade-in-upwards { //`h1` stuff
@@ -85,6 +87,71 @@
   animation-name: stagger;
 }
 
+@mixin blast($selector) {
+  #{$selector}:nth-child(1) {
+    transform: translate(-150%, -20%) rotate(-9deg);
+  }
+  #{$selector}:nth-child(2) {
+    transform: translate(-130%, 30%)rotate(-30deg);
+  }
+  #{$selector}:nth-child(3) {
+    transform: translate(-90%, -30%)  rotate(-20deg);
+  }
+  #{$selector}:nth-child(4) {
+    transform: translateX(-60%) rotate(-5deg);
+  }
+  #{$selector}:nth-child(5) {
+    transform: translate(-30%, -120%)  rotate(-3deg);
+  }
+  #{$selector}:nth-child(6) {
+    transform: translate(30%, 3%) rotate(1deg);
+  }
+  #{$selector}:nth-child(7) {
+    transform: translate(60%, 3%) rotate(3deg);
+  }
+  #{$selector}:nth-child(8) {
+    transform: translate(90%, 100%) rotate(5deg);
+  }
+  #{$selector}:nth-child(9) {
+    transform: translate(120%, -150%) rotate(7deg);
+  }
+  #{$selector}:nth-child(10) {
+    transform: translate(150%, 3%) rotate(9deg);
+  }
+}
+
+@mixin unblast ($selector){
+  #{$selector}:nth-child(1) {
+    transform: translateX(-90%);
+  }
+  #{$selector}:nth-child(2) {
+    transform: translateX(-60%);
+  }
+  #{$selector}:nth-child(3) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(4) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(5) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(6) {
+    transform: translateX(10%);
+  }
+  #{$selector}:nth-child(7) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(8) {
+    transform: translate(30%, 3%);
+  }
+  #{$selector}:nth-child(9) {
+    transform: translate(60%, 4%);
+  }
+  #{$selector}:nth-child(10) {
+    transform: translate(90%, 5%);
+  }
+}
 
 //designs
 @mixin tab-header{
@@ -96,4 +163,5 @@
   text-transform: lowercase;
   justify-self: center;
 }
+
 

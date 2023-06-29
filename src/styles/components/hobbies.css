@@ -115,6 +115,18 @@ a, a:visited, a:active {
 .hobbies-grid__img:nth-child(3) {
   transform: translateX(-30%);
 }
+.hobbies-grid__img:nth-child(4) {
+  transform: translateX(-30%);
+}
+.hobbies-grid__img:nth-child(5) {
+  transform: translateX(-30%);
+}
+.hobbies-grid__img:nth-child(6) {
+  transform: translateX(10%);
+}
+.hobbies-grid__img:nth-child(7) {
+  transform: translateX(-30%);
+}
 .hobbies-grid__img:nth-child(8) {
   transform: translate(30%, 3%);
 }
@@ -124,11 +136,41 @@ a, a:visited, a:active {
 .hobbies-grid__img:nth-child(10) {
   transform: translate(90%, 5%);
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .hobbies-grid__img {
     aspect-ratio: 4/3;
     max-width: 8rem;
     margin-top: 18rem;
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(1) {
+    transform: translate(-150%, -20%) rotate(-9deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(2) {
+    transform: translate(-130%, 30%) rotate(-30deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(3) {
+    transform: translate(-90%, -30%) rotate(-20deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(4) {
+    transform: translateX(-60%) rotate(-5deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(5) {
+    transform: translate(-30%, -120%) rotate(-3deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(6) {
+    transform: translate(30%, 3%) rotate(1deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(7) {
+    transform: translate(60%, 3%) rotate(3deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(8) {
+    transform: translate(90%, 100%) rotate(5deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(9) {
+    transform: translate(120%, -150%) rotate(7deg);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(10) {
+    transform: translate(150%, 3%) rotate(9deg);
   }
 }
 @media (min-width: 1440px) {
@@ -136,6 +178,36 @@ a, a:visited, a:active {
     aspect-ratio: 5/7;
     max-width: 20rem;
     margin-top: 50rem;
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(1) {
+    transform: translateX(-90%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(2) {
+    transform: translateX(-60%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(3) {
+    transform: translateX(-30%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(4) {
+    transform: translateX(-30%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(5) {
+    transform: translateX(-30%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(6) {
+    transform: translateX(10%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(7) {
+    transform: translateX(-30%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(8) {
+    transform: translate(30%, 3%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(9) {
+    transform: translate(60%, 4%);
+  }
+  .hobbies-grid .hobbies-grid__img:nth-child(10) {
+    transform: translate(90%, 5%);
   }
 }
 .hobbies-grid__fadein-up {

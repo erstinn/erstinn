@@ -97,7 +97,7 @@ a, a:visited, a:active {
 .projects-grid__ongoing {
   color: var(--progress_ongoing);
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .projects-grid {
     max-height: 10rem;
     max-width: 15rem;

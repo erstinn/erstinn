@@ -1,12 +1,12 @@
 @mixin mobile-small() {
-    @media (min-width: 400px) {
+    @media (min-width: 300px) {
         //max-width: 1rem;
         //min-width: 10rem;
         @content;
     }
 }
 @mixin mobile() {
-    @media (min-width: 700px) {
+    @media (min-width: 650px) {
         //max-width: 1rem;
         min-width: 10rem;
         @content;

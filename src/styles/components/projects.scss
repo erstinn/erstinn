@@ -44,16 +44,13 @@
     @include s.desktop {
         max-height: 15rem;
         max-width: 30rem;
+
     }
     &__img {
         width: 100%;
         height: auto;
         aspect-ratio: 16/9;
 
-        //&:hover {
-        //    transition: 0.6s;
-        //    opacity: 0;
-        //}
     }
 
     &__body {

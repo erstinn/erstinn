@@ -75,11 +75,12 @@ body {
   margin: 3rem 0 0 1rem;
   overflow: hidden;
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .intro-grid {
     margin: 2rem;
-    max-height: 23rem;
+    max-height: 22rem;
     max-width: 20rem;
+    opacity: 0;
   }
   .intro-grid .intro-grid__body {
     overflow: hidden; /* Hide any content that overflows the container */
@@ -89,6 +90,13 @@ body {
     height: 100%;
     object-fit: cover; /* Scale the image to cover the entire container */
     object-position: center center; /* Position the center of the image */
+  }
+}
+@media (min-width: 650px) {
+  .intro-grid {
+    min-width: 10rem;
+    max-height: 30rem;
+    max-width: 20rem;
   }
 }
 @media (min-width: 1440px) {
@@ -151,10 +159,10 @@ body {
   opacity: 0;
   overflow: hidden;
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .small-card-grid {
-    max-height: 9rem;
-    max-width: 6rem;
+    max-height: 8rem;
+    max-width: 9rem;
     margin: 0.4rem;
     padding: 0 0 1rem 0;
   }
@@ -164,11 +172,18 @@ body {
     height: 100%;
   }
 }
+@media (min-width: 650px) {
+  .small-card-grid {
+    min-width: 10rem;
+    min-width: 7rem;
+    max-height: 20rem;
+  }
+}
 @media (min-width: 1440px) {
   .small-card-grid {
     max-height: 20rem;
-    max-width: 10rem;
-    margin: 1rem 0 0 0.4rem;
+    min-width: 9rem;
+    margin: 1rem 1rem 0 0.4rem;
   }
   .small-card-grid__img {
     align-self: center;

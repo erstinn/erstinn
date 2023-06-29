@@ -13,17 +13,14 @@ body {
 }
 .intro-grid {
     @include m.grid-defaults;
-
-
     @include s.mobile-small {
         margin: 2rem;
-        max-height: 23rem;
+        max-height: 22rem;
         max-width: 20rem;
+        opacity: 0;
         .intro-grid__body{
             overflow: hidden; /* Hide any content that overflows the container */
             &__img {
-                //max-width: 100%;
-                //height: auto;
                 width: 100%;
                 height: 100%;
                 object-fit: cover; /* Scale the image to cover the entire container */
@@ -32,6 +29,12 @@ body {
         }
 
     }
+
+    @include s.mobile {
+        max-height: 30rem;
+        max-width: 20rem;
+    }
+
     @include s.desktop {
         margin: 5rem 5rem 0 5rem;
         min-height: 0.1rem;
@@ -68,8 +71,8 @@ body {
     overflow: hidden;
 
     @include s.mobile-small {
-        max-height: 9rem;
-        max-width: 6rem;
+        max-height: 8rem;
+        max-width: 9rem;
         margin: 0.4rem;
         padding: 0 0 1rem 0;
         &__img {
@@ -79,10 +82,14 @@ body {
         }
     }
 
+    @include s.mobile {
+        min-width: 7rem;
+        max-height: 20rem;
+    }
     @include s.desktop {
         max-height: 20rem;
-        max-width: 10rem;
-        margin: 1rem 0 0 0.4rem;
+        min-width: 9rem;
+        margin: 1rem 1rem 0 0.4rem;
         &__img {
             align-self: center;
             margin-inline: 0.4rem 0;

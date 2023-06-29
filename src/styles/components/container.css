@@ -64,11 +64,17 @@ a, a:visited, a:active {
 .intro-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  justify-content: center;
+  place-items: center;
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .intro-container {
     grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 650px) {
+  .intro-container {
+    min-width: 10rem;
+    grid-template-columns: 1.5fr 1fr;
   }
 }
 @media (min-width: 1440px) {
@@ -86,24 +92,25 @@ a, a:visited, a:active {
 .small-card-container {
   display: grid;
   justify-content: center;
-  align-items: center;
+  place-items: center;
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .small-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 0.1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 0.1fr));
   }
 }
 @media (min-width: 1440px) {
   .small-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
 
 .projects-container {
   display: grid;
   justify-content: center;
+  place-items: center;
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 0.1fr));
   }
