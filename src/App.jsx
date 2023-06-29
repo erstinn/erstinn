@@ -45,11 +45,16 @@ function App() {
                 {/*)}*/}
                 {/*todo enclose sht inside menu in `Container`*/}
                 {/*<div className={`ahiru-bar__sidebar  ${menu_class}`}></div>*/}
-            <div className='ahiru-bar__contents'>
-                <img onClick={changeTheme}
-                     className='ahiru-bar__contents' src="/images/hanahiru.png" alt=""/>
-                    {theme==='light' ?(<span>{currentLanguage.lightMode}</span>) :
-                        (<span> {currentLanguage.darkMode} </span>)}
+            <div className='ahiru-bar__contents' onClick={changeTheme}>
+                {/*<img className='ahiru-bar__contents' src="/images/test.png" alt=""/>*/}
+                    {theme==='light' ?(<>
+                            <img className='ahiru-bar__contents' src="/images/futoimizuniiruriru.png" alt=""/>
+                            <span>{currentLanguage.lightMode}</span>
+                        </>) : (<>
+                            <img className='ahiru-bar__contents' src="/images/crywatercute.png" alt=""/>
+                            <span> {currentLanguage.darkMode} </span>
+                        </>)
+                    }
             </div>
             <div className='ahiru-bar__contents'>
                 <img  className='ahiru-bar__contents' src="/images/hanahiru.png" alt=""/>

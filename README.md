@@ -7,18 +7,18 @@
   
   - card stack animation: https://www.youtube.com/watch?v=6TYkDy54q4E
   
-**Extra TODO List / やることリスト**
+**Extra TODO List to overengineer/やることリスト**
   
 -  [ ] spotify api
   
--  [ ] instagwam api
+-  [ ] instagram api
   
 -  [ ] booklist?
   
--  [ ] meow
 
 
-**アヒルノート**
+
+**ノート**
 
 - Did not use ThemeProvider way through StyledComponents or MUI 
 

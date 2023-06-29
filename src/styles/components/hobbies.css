@@ -56,9 +56,11 @@ a, a:visited, a:active {
   --bg: #2F343F;
   --bg_secondary: #BE9396;
   --bg_header: #BE9396;
-  --text_header: #EBE098;
+  --text_header: #fdf6b7;
   --text: #C3D9D3;
   --border: #EBE098;
+  --progress_ongoing: #e3ebff;
+  --progress_done: #acffac;
 }
 
 .hobbies-grid {
