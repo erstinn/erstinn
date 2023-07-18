@@ -1,8 +1,11 @@
+h1, h2, h3 {
+  white-space: nowrap;
+}
+
 h2, h3 { //compound selectors: selectors separated by comma
   font-weight: 1000; //bold
   line-height: 1.01; //ensures line height of each line of text is a little taller than the usual fontsize itself //1.1 = 110%
   margin-top: 0; //browsers by default add margin top and bottom; can either remove on, depending on ur pref.
-
 }
 
 
@@ -10,7 +13,6 @@ h3{
   line-height: 0.3;
   font-weight: 300;
   font-size: calc(10px + 0.5vw);
-
 }
 h1{
   font-size: calc(9px + 7vw);

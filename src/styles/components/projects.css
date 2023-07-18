@@ -1,4 +1,7 @@
-html {
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
   font-size: 100%;
 }
@@ -8,10 +11,13 @@ html {
 }
 
 body {
-  margin: 1rem;
   padding: 0;
   font-family: "DotGothic16", sans-serif;
   color: var(--text);
+}
+
+h1, h2, h3 {
+  white-space: nowrap;
 }
 
 h2, h3 {
@@ -46,7 +52,7 @@ a, a:visited, a:active {
   --bg_secondary: #F4E8D2;
   --bg_header: #A594AA;
   --text_header: #4F4541;
-  --text: #F0E9D6;
+  --text: #4d352e;
   --border: #F4A7A0;
   --progress_ongoing: #ffaa6e;
   --progress_done: #8db58d;
@@ -71,6 +77,7 @@ a, a:visited, a:active {
   background-color: var(--bg_secondary);
   margin: 3rem 0 0 1rem;
   overflow: hidden;
+  object-fit: cover;
   display: grid;
   margin: 0;
 }

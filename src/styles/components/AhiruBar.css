@@ -1,4 +1,7 @@
-html {
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
   font-size: 100%;
 }
@@ -8,10 +11,13 @@ html {
 }
 
 body {
-  margin: 1rem;
   padding: 0;
   font-family: "DotGothic16", sans-serif;
   color: var(--text);
+}
+
+h1, h2, h3 {
+  white-space: nowrap;
 }
 
 h2, h3 {
@@ -46,7 +52,7 @@ a, a:visited, a:active {
   --bg_secondary: #F4E8D2;
   --bg_header: #A594AA;
   --text_header: #4F4541;
-  --text: #F0E9D6;
+  --text: #4d352e;
   --border: #F4A7A0;
   --progress_ongoing: #ffaa6e;
   --progress_done: #8db58d;
@@ -67,16 +73,8 @@ a, a:visited, a:active {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin: 1rem 1rem 0 0;
   transition: transform 3s;
-}
-.ahiru-bar__img {
-  margin: 0.2rem 0 0 0.1rem;
-  padding: 0;
-  cursor: pointer;
-  max-height: 50px;
-  flex-direction: column;
-  height: 100%;
-  width: 4rem;
 }
 .ahiru-bar__contents {
   display: flex;
@@ -87,6 +85,7 @@ a, a:visited, a:active {
   margin: 0.2rem 1rem 0 0.1rem;
   padding: 0;
   cursor: pointer;
+  width: auto;
 }
 .ahiru-bar__language {
   border: none;
@@ -94,27 +93,6 @@ a, a:visited, a:active {
   background-color: var(--bg_secondary);
   font-family: "DotGothic16", sans-serif;
   padding: 0.2rem;
-}
-.ahiru-bar__sidebar {
-  z-index: 1;
-  width: 25%;
-  height: 60vh;
-  margin-top: 40rem;
-  position: fixed;
-  background-color: var(--bg_secondary);
-  margin-left: -1rem;
-  border: 1px solid var(--bg_secondary);
-  border-radius: 20px;
-}
-.ahiru-bar__sidebar.hidden {
-  transition: transform 1s;
-  transform: translateX(-100%);
-}
-.ahiru-bar__sidebar.visible {
-  opacity: 1;
-  display: inherit;
-  transition: transform 0.5s;
-  transform: translateX(10%);
 }
 
 /*# sourceMappingURL=AhiruBar.css.map */

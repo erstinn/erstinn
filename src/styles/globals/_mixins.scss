@@ -8,6 +8,7 @@
   background-color: var(--bg_secondary);
   margin: 3rem 0 0 1rem;
   overflow: hidden;
+  object-fit: cover;
 }
 
 
@@ -89,7 +90,7 @@
 
 @mixin blast($selector) {
   #{$selector}:nth-child(1) {
-    transform: translate(-150%, -20%) rotate(-9deg);
+    transform: translate(-150%, -20%) rotate(-20deg);
   }
   #{$selector}:nth-child(2) {
     transform: translate(-130%, 30%)rotate(-30deg);
@@ -104,13 +105,13 @@
     transform: translate(-30%, -120%)  rotate(-3deg);
   }
   #{$selector}:nth-child(6) {
-    transform: translate(30%, 3%) rotate(1deg);
+    transform: translate(10%, 3%) rotate(1deg);
   }
   #{$selector}:nth-child(7) {
-    transform: translate(60%, 3%) rotate(3deg);
+    transform: translate(60%, -20%) rotate(3deg);
   }
   #{$selector}:nth-child(8) {
-    transform: translate(90%, 100%) rotate(5deg);
+    transform: translate(90%, 50%) rotate(5deg);
   }
   #{$selector}:nth-child(9) {
     transform: translate(120%, -150%) rotate(7deg);

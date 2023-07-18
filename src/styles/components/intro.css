@@ -1,4 +1,7 @@
-html {
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
   font-size: 100%;
 }
@@ -8,10 +11,13 @@ html {
 }
 
 body {
-  margin: 1rem;
   padding: 0;
   font-family: "DotGothic16", sans-serif;
   color: var(--text);
+}
+
+h1, h2, h3 {
+  white-space: nowrap;
 }
 
 h2, h3 {
@@ -46,7 +52,7 @@ a, a:visited, a:active {
   --bg_secondary: #F4E8D2;
   --bg_header: #A594AA;
   --text_header: #4F4541;
-  --text: #F0E9D6;
+  --text: #4d352e;
   --border: #F4A7A0;
   --progress_ongoing: #ffaa6e;
   --progress_done: #8db58d;
@@ -76,6 +82,7 @@ body {
   background-color: var(--bg_secondary);
   margin: 3rem 0 0 1rem;
   overflow: hidden;
+  object-fit: cover;
 }
 @media (min-width: 300px) {
   .intro-grid {
@@ -96,9 +103,7 @@ body {
 }
 @media (min-width: 650px) {
   .intro-grid {
-    min-width: 10rem;
     max-height: 30rem;
-    max-width: 20rem;
   }
 }
 @media (min-width: 1440px) {
@@ -154,8 +159,7 @@ body {
   background-color: var(--bg_secondary);
   margin: 3rem 0 0 1rem;
   overflow: hidden;
-  min-height: 0.1rem;
-  min-width: 0.1rem;
+  object-fit: cover;
   max-height: 20rem;
   max-width: 10rem;
   opacity: 0;
@@ -163,22 +167,33 @@ body {
 }
 @media (min-width: 300px) {
   .small-card-grid {
-    max-height: 8rem;
-    max-width: 9rem;
-    margin: 0.4rem;
+    min-height: 5rem;
+    min-width: 5rem;
     padding: 0 0 1rem 0;
   }
   .small-card-grid__img {
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
     height: 100%;
   }
 }
 @media (min-width: 650px) {
   .small-card-grid {
-    min-width: 10rem;
     min-width: 7rem;
-    max-height: 20rem;
+    max-height: 6rem;
+    padding: 0 0 1.5rem 0;
+  }
+  .small-card-grid__img {
+    width: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .small-card-grid {
+    min-width: 7rem;
+    max-height: 6rem;
+  }
+  .small-card-grid__img {
+    width: 90%;
   }
 }
 @media (min-width: 1440px) {

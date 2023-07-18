@@ -11,9 +11,7 @@ const Intro = (lang) => {
     //todo GO LOOK OR GET EATEN BY ABSTRACTION
     const {ref: ahiRef, inView: elemIsVisible} = useInView({threshold: 1, triggerOnce: true,} );
     const { ref: picRef, inView: introPicIsVisible } = useInView(); //test for first card
-
     const currentLanguage = lang.lang;
-    //IntersectionObserver stuff end
 
     return (
         <div>

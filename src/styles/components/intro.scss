@@ -32,7 +32,6 @@ body {
 
     @include s.mobile {
         max-height: 30rem;
-        max-width: 20rem;
     }
 
     @include s.desktop {
@@ -63,39 +62,50 @@ body {
 
 .small-card-grid{
     @include m.grid-defaults;
-    min-height: 0.1rem;
-    min-width: 0.1rem;
     max-height: 20rem;
     max-width: 10rem;
     opacity: 0;
     overflow: hidden;
 
     @include s.mobile-small {
-        max-height: 8rem;
-        max-width: 9rem;
-        margin: 0.4rem;
+        min-height: 5rem;
+        min-width: 5rem;
+        //margin: 1rem;
         padding: 0 0 1rem 0;
         &__img {
             margin: 0 auto;
-            width: 60%;
+            width: 70%;
             height: 100%;
         }
     }
 
     @include s.mobile {
         min-width: 7rem;
-        max-height: 20rem;
-    }
-    @include s.desktop {
-        max-height: 20rem;
-        min-width: 9rem;
-        margin: 1rem 1rem 0 0.4rem;
+        max-height: 6rem;
+        padding: 0 0 1.5rem 0;
         &__img {
-            align-self: center;
-            margin-inline: 0.4rem 0;
-            width: auto;
-            height: auto;
+            width: 80%;
         }
+    }
+
+    @include s.tablet {
+        min-width: 7rem;
+        max-height: 6rem;
+        &__img {
+            width: 90%;
+        }
+    }
+
+    @include s.desktop {
+    max-height: 20rem;
+    min-width: 9rem;
+    margin: 1rem 1rem 0 0.4rem;
+    &__img {
+        align-self: center;
+        margin-inline: 0.4rem 0;
+        width: auto;
+        height: auto;
+    }
     }
 
     &__body{
@@ -116,10 +126,6 @@ body {
         }
     }
 }
-
-
-
-
 
 
 //todo put code inside `media` query in case ppl dont like animation

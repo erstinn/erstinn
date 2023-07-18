@@ -1,8 +1,12 @@
-html {
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box; //ensures if you add padding/borders to an element of your site,it will be included in the width/height of the element
   // e.g. adding padding to 300px box, final width is still 300 regardless of adding paddings
   font-size: 100%; // accessibility purpose, ensures fontsize on ur site matches 100 % of default fontsize set  in your browser
   //defaults to 16px
+  //white-space: nowrap;
 }
 
 *, *::before *::after{
@@ -13,7 +17,7 @@ html {
 //browser has default styles, and they are added into any sites unless overwritten by these styles in `body`
 //todo (or use CssBaseline from MUI's lib)
 body {
-  margin: 1rem;
+  //margin: 1rem;
   padding: 0;
   font-family: 'DotGothic16', sans-serif;
   color: var(--text);
