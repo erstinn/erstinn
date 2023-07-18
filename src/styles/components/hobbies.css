@@ -78,10 +78,10 @@ a, a:visited, a:active {
   transform: translate(-150%, -20%) rotate(-20deg);
 }
 .hobbies-grid:hover .hobbies-grid__img:nth-child(2) {
-  transform: translate(-130%, 30%) rotate(-30deg);
+  transform: translate(-150%, 10%) rotate(-20deg);
 }
 .hobbies-grid:hover .hobbies-grid__img:nth-child(3) {
-  transform: translate(-90%, -30%) rotate(-20deg);
+  transform: translate(-90%, 10%) rotate(-20deg);
 }
 .hobbies-grid:hover .hobbies-grid__img:nth-child(4) {
   transform: translateX(-60%) rotate(-5deg);
@@ -152,10 +152,10 @@ a, a:visited, a:active {
     transform: translate(-150%, -20%) rotate(-20deg);
   }
   .hobbies-grid .hobbies-grid__img:nth-child(2) {
-    transform: translate(-130%, 30%) rotate(-30deg);
+    transform: translate(-150%, 10%) rotate(-20deg);
   }
   .hobbies-grid .hobbies-grid__img:nth-child(3) {
-    transform: translate(-90%, -30%) rotate(-20deg);
+    transform: translate(-90%, 10%) rotate(-20deg);
   }
   .hobbies-grid .hobbies-grid__img:nth-child(4) {
     transform: translateX(-60%) rotate(-5deg);
