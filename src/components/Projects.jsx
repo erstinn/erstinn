@@ -27,7 +27,7 @@ const Projects = (lang) => {
             <div className='projects-container'>
                 <div ref={ahiRef} className={`projects-grid ${elemIsVisible ? "projects-grid__fadein-up" : ''}`}>
                     <div className='projects-grid__header'>
-                        <h3>FiLedger <span className='projects-grid__done'>[done]</span></h3>
+                        <h3>FiLedger <span className='projects-grid__done'>[{currentLanguage.done}]</span></h3>
                     </div>
                     <div className='projects-grid__body'>
                         <strong>{currentLanguage.techStack}:</strong> NodeJS, ExpressJS, Hyperledger Fabric, Kubernetes, Docker, CouchDB, HTML/CSS
@@ -38,7 +38,7 @@ const Projects = (lang) => {
                 </div>
                 <div ref={ahiRef} className={`projects-grid ${elemIsVisible ? "projects-grid__fadein-up" : ''}`}>
                     <div className='projects-grid__header'>
-                        <h3>ahiruquiz <span className='projects-grid__ongoing'> [in progress]</span></h3>
+                        <h3>ahiruquiz <span className='projects-grid__ongoing'> [{currentLanguage.inProgress}]</span></h3>
                     </div>
                     <div className='projects-grid__body'>
                         <strong>{currentLanguage.techStack}:</strong> MERN, Redux, HTML/CSS
@@ -49,7 +49,7 @@ const Projects = (lang) => {
                 </div>
                 <div ref={ahiRef} className={`projects-grid ${elemIsVisible ? "projects-grid__fadein-up" : ''}`}>
                     <div className='projects-grid__header'>
-                        <h3>ducklang <span className='projects-grid__done'>[done]</span></h3>
+                        <h3>ducklang <span className='projects-grid__done'>[{currentLanguage.done}]</span></h3>
                     </div>
                     <div className='projects-grid__body'>
                         <strong>{currentLanguage.techStack}:</strong> NodeJS
@@ -60,7 +60,7 @@ const Projects = (lang) => {
                 </div>
                 <div ref={ahiRef} className={`projects-grid ${elemIsVisible ? "projects-grid__fadein-up" : ''}`}>
                     <div className='projects-grid__header'>
-                        <h3>duckmovies <span className='projects-grid__done'>[done]</span></h3>
+                        <h3>duckmovies <span className='projects-grid__done'>[{currentLanguage.done}]</span></h3>
                     </div>
                     <div className='projects-grid__body'>
                         <strong>{currentLanguage.techStack}:</strong> HTML, CSS, PHP

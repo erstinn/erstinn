@@ -10,7 +10,9 @@
     "language2" : "Japanese",
     "projects" : "Projects",
     "hobbies" : "Hobbies",
-    "techStack" : "Tech Stack"
+    "techStack" : "Tech Stack",
+    "done" : "done",
+    "inprogress" : "in progress"
   },
   "jp":{
     "greetingHeader": "こんにちは、",
@@ -23,6 +25,8 @@
     "language2" : "英語",
     "projects" : "プロジェクト",
     "hobbies" : "趣味など",
-    "techStack": "技術スタック"
+    "techStack": "技術スタック",
+    "done": "完了",
+    "inProgress": "実装中"
   }
 }
