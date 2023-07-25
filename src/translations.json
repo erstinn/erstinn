@@ -12,7 +12,7 @@
     "hobbies" : "Hobbies",
     "techStack" : "Tech Stack",
     "done" : "done",
-    "inprogress" : "in progress"
+    "inProgress" : "in progress"
   },
   "jp":{
     "greetingHeader": "こんにちは、",
