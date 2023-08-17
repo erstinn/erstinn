@@ -1,13 +1,15 @@
 # erstinn.github.io
-<h3>Tech Stack _技術スタック_ </h3>
+<h3>Tech Stack 技術スタック </h3>
   
-  - Vite, React, Sass
+  - Vite, React, SCSS
 
-  - Icons provided by Icons8 (https://icons8.com/) 
+  - [Icons provided by Icons8](https://icons8.com/) 
   
-  - card stack animation: https://www.youtube.com/watch?v=6TYkDy54q4E
+  - [card stack animation](https://www.youtube.com/watch?v=6TYkDy54q4E)
   
-**Extra TODO List to overengineer/やることリスト**
+  - [FiLedger Repo](https://github.com/erstinn/FiLedger) 
+
+**Extra TODO List to overengineer 要らないけどやりたいリスト**
   
 -  [ ] spotify api
   

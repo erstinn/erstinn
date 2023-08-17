@@ -32,7 +32,7 @@ const Projects = (lang) => {
                     <div className='projects-grid__body'>
                         <strong>{currentLanguage.techStack}:</strong> NodeJS, ExpressJS, Hyperledger Fabric, Kubernetes, Docker, CouchDB, HTML/CSS
                     </div>
-                    <a href="https://drive.google.com/drive/u/2/folders/10qci5valF2Z_ZGiyiUq1hNH9uZkj154R" target="_blank">
+                    <a href="https://drive.google.com/drive/u/2/folders/1qFdd2pMIYjAvXFflKfwu5F0QI7cH9ro0" target="_blank">
                         <img className='projects-grid__img' src="/images/projs/filedger.png" alt=""/>
                     </a>
                 </div>
