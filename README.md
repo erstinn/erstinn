@@ -21,6 +21,7 @@
 
 
 **ノート**
+- 自分にノート：vercelじゃなくてnetlifyを使ってる
 
 - Did not use ThemeProvider way through StyledComponents or MUI 
 
