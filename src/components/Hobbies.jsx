@@ -15,19 +15,19 @@ const Hobbies = (lang) => {
                 {/*console.log(lang[language].hobbies);*/}
                 <h1>{currentLanguage.hobbies}</h1>
             </div>
-            <div className={`hobbies-grid ${elemIsVisible ? "projects-grid__fadein-down" : ''}`}>
-                <img className='hobbies-grid__img' src="/images/hobbies/p1.jpg" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p2.jpg" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p3.jpg" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p4.jpg" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p5.jpg" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p6.jpg" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p7.png" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p8.png" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p9.jpg" alt=""/>
-                <img className='hobbies-grid__img' src="/images/hobbies/p10.jpg" alt=""/>
+           <div className={`hobbies-grid ${elemIsVisible ? "projects-grid__fadein-down" : ''}`}>
+              <img className='hobbies-grid__img' src="/images/hobbies/p1.jpg" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p2.jpg" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p3.jpg" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p4.jpg" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p5.jpg" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p6.jpg" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p7.png" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p8.png" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p9.jpg" alt=""/>
+              <img className='hobbies-grid__img' src="/images/hobbies/p10.jpg" alt=""/>
 
-            </div>
+           </div>
         </div>
     );
 };
